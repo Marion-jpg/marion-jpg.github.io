@@ -1,0 +1,189 @@
+* {
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fff;
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHZsZXZuYXVwdzZkcmczZXM3ZHh2ZW55M2hobzN3Zm1qOGN6dGc3ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mJONUM663p4OZt3i5J/giphy.webp);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.site-header {
+    background-color: #ff8db4;  
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.site-header h1 {
+    font-size: 2.5rem; 
+    font-weight: bold;
+}
+
+.site-header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.button-link {
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.button-link:hover {
+    background: linear-gradient(45deg, #45a049, #4CAF50);
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    max-width: 800px;
+    margin: 5rem auto;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cookie-image {
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cookie-on-plate {
+    max-width: 250px;
+    border-radius: 150%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.festive-cookies {
+    max-width: 200px;
+    border-radius: 150%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.oreo {
+    max-width: 300px;
+    border-radius: 150%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.background {
+    position: relative;
+}
+
+.main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;  /* Allows for better wrapping on smaller screens */
+}
+
+.chocolate-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.chocolate-chip img {
+    max-width: 100%;
+    height: auto;
+}
+
+.goofy-cookie {
+    max-width: 300px;
+    border-radius: 150%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .site-header h1 {
+        font-size: 2rem;  /* Slightly smaller title on large screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;  /* Stack items vertically on tablets */
+        padding: 15px;
+    }
+
+    .site-header h1 {
+        font-size: 1.8rem;  /* Smaller font size for smaller screens */
+    }
+
+    .button-link {
+        padding: 10px 20px;
+        font-size: 14px;  /* Smaller buttons */
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .cookie-image,
+    .cookie-on-plate,
+    .festive-cookies,
+    .oreo,
+    .goofy-cookie {
+        max-width: 80%;  /* Ensure images fit on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header h1 {
+        font-size: 1.5rem;  /* Even smaller font size for very small screens */
+    }
+
+    .button-link {
+        padding: 8px 15px;
+        font-size: 12px;  /* Smaller buttons on mobile */
+    }
+
+    .container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .cookie-image,
+    .cookie-on-plate,
+    .festive-cookies,
+    .oreo,
+    .goofy-cookie {
+        max-width: 70%;  /* Make images smaller for smaller screens */
+    }
+}
